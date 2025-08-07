@@ -34,6 +34,6 @@ import java.util.*;
 
 - Import von ganzen Modulen.
 - Vereinfacht jshell und Single Source Files, da dort java.base per default importiert wird.
-- Alter Streit: specific vs. wildcard imports.
+- Alter Streit neu entfacht: specific vs. wildcard vs. module imports.
 
 ---
