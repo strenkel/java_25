@@ -17,8 +17,23 @@ style: |
 
 ---
 
-# JEP 511: Module Import
+# Module Import Declarations
 
-- 
+```java
+import module java.base;
+```
+anstatt
+```java
+import java.lang.*;
+import java.nio.*;
+import java.net.*;
+import java.time.*;
+import java.util.*;
+// ...
+```
+
+- Import von ganzen Modulen.
+- Vereinfacht jshell und Single Source Files, da dort java.base per default importiert wird.
+- Alter Streit: specific vs. wildcard imports.
 
 ---
