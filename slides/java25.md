@@ -69,3 +69,25 @@ public class HelloWorld {
 
 ---
 
+# Flexible Constructor Bodies (JEP 513)
+
+```java
+public class SubClass extends SuperClass {
+  int subField;
+  public SubClass(int superField, int subField) {
+    if (superField > 100) throw new IllegalArgumentException();
+    if (subField < 0) throw new IllegalArgumentException();
+    this.subField = subField;
+    super(superField);
+  }
+}
+```
+
+- Code vor super(...) und this(...) möglich
+- SubClass-Fields können vor super/this-Aufruf initialisiert werden
+- Vereinfacht Validierungen und Berechnungen
+- Keine inkonsistenten Objekte bei super-Aufruf
+- Wichtige Voraussetzung für Projekt Valhalla
+
+# 
+
