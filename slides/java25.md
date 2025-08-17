@@ -17,12 +17,14 @@ style: |
 
 ---
 
-# Module Import Declarations
+# Module Import Declarations (JEP 511)
 
 ```java
 import module java.base;
 ```
+
 anstatt
+
 ```java
 import java.lang.*;
 import java.nio.*;
@@ -32,8 +34,38 @@ import java.util.*;
 // ...
 ```
 
-- Import von ganzen Modulen.
-- Vereinfacht jshell und Single Source Files, da dort java.base per default importiert wird.
-- Alter Streit neu entfacht: specific vs. wildcard vs. module imports.
+- Import von Modulen.
+- Transitives Einbinden
+- JShell und Compact Source Files importieren java.base per default
+- Best practice: specific vs. wildcard vs. module imports?
 
 ---
+
+# Compact Source Files and Instance Main Methods (JEP 512)
+
+```java
+void main() {
+  IO.println("Hello world!");
+}
+```
+
+anstatt
+
+```java
+public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello world!");
+  }
+}
+```
+
+- Keine Klassendeklaration
+- Kein public static
+- Keine Argumente
+- Vereinfachte Ein-/Ausgabe mit IO.print ..println ..readln
+- Impliziter Import von java.base
+- Gut zum Lernen
+- Java auf dem Weg zu Java_Script (Single-File Programs)
+
+---
+
