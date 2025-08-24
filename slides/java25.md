@@ -17,6 +17,23 @@ style: |
 
 ---
 
+# Überblick Sprach-Features
+
+- Java 25
+  - Module Import Declarations (JEP 511)
+  - Compact Source Files and Instance Main Methods (JEP 512)
+  - Flexible Constructor Bodies (JEP 513)
+  - Scoped Values (JEP 506)
+- Java 24
+  - Stream Gatherers (JEP 485)
+- Java 23
+  - Markdown Documentation Comments (JEP 467)
+- Java 22
+  - Unnamed Variables & Patterns (JEP 456)
+  - Launch Multi-File Source-Code Programs (JEP 458)
+
+---
+
 # Module Import Declarations (JEP 511)
 
 ```java
@@ -89,5 +106,7 @@ public class SubClass extends SuperClass {
 - Keine inkonsistenten Objekte bei super-Aufruf
 - Wichtige Voraussetzung für Projekt Valhalla
 
-# 
+# Scoped Values (JEP 506)
+
+
 
