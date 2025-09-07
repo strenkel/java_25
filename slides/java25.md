@@ -117,8 +117,8 @@ public class SubClass extends SuperClass {
 - Moderne Variante von ThreadLocal / InheritableThreadLocal
 - Zugriff durch StructuredTaskScope-Child-Threads 
 - Vorteile:
-- - Unveränderlich
 - - Klare Gültigkeit
-- - Geringere Speicher / Performater
+- - Unveränderlich
+- - Performater / Geringerer Speicherverbrauch
 
 

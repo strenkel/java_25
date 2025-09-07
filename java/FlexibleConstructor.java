@@ -1,8 +1,6 @@
-void main() {
-    new A();
-    new B();
-}
-
+/**
+ * Flexible Constructor Bodies (JEP 513)
+ */
 
 class A {
 
@@ -11,9 +9,8 @@ class A {
     }
 
     void print() {
-        IO.println("This is A!");
+        IO.println("I'm A!");
     }
-
 }
 
 class B extends A {
@@ -22,13 +19,16 @@ class B extends A {
 
     B() {
         b = "B";
-        super();
     }
 
     void print() {
-        IO.println("This is " + b + "!");
+        IO.println("I'm " + b + "!");
     }
+}
 
+void main() {
+    new A();
+    new B();
 }
 
 
