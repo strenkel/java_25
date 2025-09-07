@@ -1,3 +1,7 @@
+/**
+ * Scoped Values (JEP 506).
+ */
+
 private static ThreadLocal<Integer> threadLocal = ThreadLocal.withInitial(() -> 0);
 private static ScopedValue<Integer> scopedValue = ScopedValue.newInstance();
 

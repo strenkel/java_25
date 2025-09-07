@@ -119,6 +119,6 @@ public class SubClass extends SuperClass {
 - Vorteile:
 - - Klare Gültigkeit
 - - Unveränderlich
-- - Performater / Geringerer Speicherverbrauch
+- - Performater / geringerer Speicherverbrauch
 
 

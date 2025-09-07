@@ -1,5 +1,5 @@
 /**
- * Flexible Constructor Bodies (JEP 513)
+ * Flexible Constructor Bodies (JEP 513).
  */
 
 class A {
