@@ -136,10 +136,9 @@ public class SubClass extends SuperClass {
 
 ## Scoped Values (Project Loom)
 
-- Daten (i.d.R Context-Daten wie user, role) über Methodenketten bereitstellen 
+- Daten (z.B. Context-Daten) über Methodenketten bereitstellen 
 - Moderne Variante von ThreadLocal / InheritableThreadLocal
 - Weitergabe an Child-Threads über StructuredTaskScope
-- Zweites Project Loom-Feature (Virtual Threads, Structured Concurrency, ...)
 - Vorteile:
 - - Klare Gültigkeit
 - - Unveränderlich
@@ -157,7 +156,7 @@ public class SubClass extends SuperClass {
 
 ---
 
-## Compact Object Headers (Project Lilliput - JEP 519)
+## Compact Object Headers (Project Lilliput)
 
 - Reduzierung des Object Headers von 12 auf 8 Byte
 - 27 unbenutze Bits entfernt
@@ -167,15 +166,16 @@ public class SubClass extends SuperClass {
 
 ---
 
-## Ahead-of-Time Command-Line Ergonomics (Project Leyden - JEP 514)
+## Ahead-of-Time Command-Line Ergonomics
 
-- Erzeugung des Ahead-of-Time Class Loading & Linking Cache wird vereinfacht
+- Erzeugung des AoT Caches wird vereinfacht
 - Verkürzt die Start-Zeit von Java-Anwendung um bis zu 40%
 - Weiterentwicklung von Application Class Data Sharing (AppCDS)
+- Project Leyden
 
 ---
 
-## Ahead-of-Time Method Profiling (Project Leyden - JEP 515)
+## Ahead-of-Time Method Profiling
 
 - Methoden-Profile werden zusätzlich im AOT-Cache gespeichert
 - JIT-Komplilierung startet sofort
@@ -184,7 +184,7 @@ public class SubClass extends SuperClass {
 
 ---
 
-## Wichtiges bis Java 25
+## Feature Java 22 - 24
 
 - Stream Gatherers (Java 24 - JEP 485)
 - Markdown Documentation Comments (Java 23 - JEP 467)
