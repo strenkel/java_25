@@ -134,7 +134,7 @@ public class SubClass extends SuperClass {
 
 ---
 
-## Scoped Values (Project Loom - JEP 506)
+## Scoped Values (Project Loom)
 
 - Daten (i.d.R Context-Daten wie user, role) über Methodenketten bereitstellen 
 - Moderne Variante von ThreadLocal / InheritableThreadLocal
