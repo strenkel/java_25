@@ -1,10 +1,9 @@
-import java.util.HashSet;
-import java.util.Set;
-
 /**
- * Java 8:  12.0s
- * Java 17:  2.0s
- * Java 25:  2.0s
+ * Times from 'time java StringConact':
+ * 
+ * Java 8:  12s
+ * Java 17:  2s
+ * Java 25:  2s
  */
 class StringConcat {
     public static void main(String[] args) {
