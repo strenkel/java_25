@@ -14,8 +14,7 @@ void main() {
         threadLocal.set(1);
         ScopedValue.where(scopedValue, 1).run(() -> {
             for (int i = 0; i < 2; i++) {
-                IO.println("ThreadLocal in 1. thread: " + threadLocal.get());
-                IO.println("ScopedValue in 1. thread: " + scopedValue.get());
+                print("1");
                 wait(10);
             }
         });
@@ -25,8 +24,7 @@ void main() {
         threadLocal.set(2);     
         ScopedValue.where(scopedValue, 2).run(() -> {
             for (int i = 0; i < 2; i++) {
-                IO.println("ThreadLocal in 2. thread: " + threadLocal.get());
-                IO.println("ScopedValue in 2. thread:" + scopedValue.get());
+                print("2");
                 wait(10);
             }
         });
@@ -36,6 +34,11 @@ void main() {
 
     IO.println("ThreadLocal in main: " + threadLocal.get());
     IO.println("ScopedValue in main: " + scopedValue.isBound());
+}
+
+void print(String threadName) {
+    IO.println("ThreadLocal in thread " + threadName + ": " + threadLocal.get());
+    IO.println("ScopedValue in thread:" + threadName + ": " + scopedValue.get());
 }
 
 void wait(int millis) {

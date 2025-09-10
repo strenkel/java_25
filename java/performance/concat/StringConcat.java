@@ -1,5 +1,5 @@
 /**
- * Times from 'time java StringConact':
+ * Times from 'time java StringConcat':
  * 
  * Java 8:  12s
  * Java 17:  2s
