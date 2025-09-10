@@ -168,7 +168,7 @@ public class SubClass extends SuperClass {
 
 ## Ahead-of-Time Command-Line Ergonomics
 
-- Erzeugung des AoT Caches wird vereinfacht
+- Erzeugung des AOT Caches wird vereinfacht
 - Verkürzt die Start-Zeit von Java-Anwendung um bis zu 40%
 - Weiterentwicklung von Application Class Data Sharing (AppCDS)
 - Project Leyden
