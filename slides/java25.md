@@ -112,7 +112,7 @@ void main() {
 ## Flexible Constructor Bodies
 
 - Code vor super(...) und this(...) möglich
-- SubClass-Fields können vor super/this-Aufruf initialisiert werden
+- SubClass-Fields können vor super-Aufruf initialisiert werden
 - Vereinfacht Validierungen und Berechnungen
 - Keine inkonsistenten Objekte bei super-Aufruf
 
@@ -181,15 +181,6 @@ public class SubClass extends SuperClass {
 - JIT-Komplilierung startet sofort
 - Warm-up Phase wird verkürzt
 - Bis zu 20% schnellere Start-Zeit
-
----
-
-## Feature Java 22 - 24
-
-- Stream Gatherers (Java 24 - JEP 485)
-- Markdown Documentation Comments (Java 23 - JEP 467)
-- Unnamed Variables & Patterns (Java 22 - JEP 456)
-- Launch Multi-File Source-Code Programs (Java 22 - JEP 458)
 
 ---
 

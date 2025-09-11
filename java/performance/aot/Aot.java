@@ -1,3 +1,4 @@
+///
 /// AOT Erzeugung & Nutzung Java 24:
 /// 
 ///     javac Aot.java
