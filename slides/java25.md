@@ -146,26 +146,6 @@ public class SubClass extends SuperClass {
 
 ---
 
-## Generational Shenandoah (JEP 521)
-
-- Aufteilung des Heaps in Young und Old Space
-- Schwache Generationshypothese
-- - Entweder lebt ein Objekt sehr kurz oder sehr lang
-- Ziel von Shenandoah: Kurze Latenzen von max 10ms.
-- Aktivierung: -XX:+UseShenandoahGC -XX:ShenandoahGCMode=generational
-
----
-
-## Compact Object Headers (Project Lilliput)
-
-- Reduzierung des Object Headers von 12 auf 8 Byte
-- 27 unbenutze Bits entfernt
-- Class Pointer von 32 auf 22 Bits reduziert
-- Ziel: weitere Reduzierung auf 4 Byte
-- Aktivierung: XX:+UseCompactObjectHeaders
-
----
-
 ## Ahead-of-Time Command-Line Ergonomics
 
 - Erzeugung des AOT Caches wird vereinfacht
@@ -181,6 +161,26 @@ public class SubClass extends SuperClass {
 - JIT-Komplilierung startet sofort
 - Warm-up Phase wird verkürzt
 - Bis zu 20% schnellere Start-Zeit
+
+---
+
+## Compact Object Headers (Project Lilliput)
+
+- Reduzierung des Object Headers von 12 auf 8 Byte
+- 27 unbenutze Bits entfernt
+- Class Pointer von 32 auf 22 Bits reduziert
+- Ziel: weitere Reduzierung auf 4 Byte
+- Aktivierung: XX:+UseCompactObjectHeaders
+
+---
+
+## Generational Shenandoah (JEP 521)
+
+- Aufteilung des Heaps in Young und Old Space
+- Schwache Generationshypothese
+- - Entweder lebt ein Objekt sehr kurz oder sehr lang
+- Ziel von Shenandoah: Kurze Latenzen von max 10ms.
+- Aktivierung: -XX:+UseShenandoahGC -XX:ShenandoahGCMode=generational
 
 ---
 
